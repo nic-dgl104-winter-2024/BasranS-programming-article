@@ -59,7 +59,7 @@ Duplication is the root of all evil in programming. DRY is a principle of softwa
 
 3. Use refactoring tools
 Many integrated development environments (IDEs) include tools that automate refactoring tasks. This can speed up the refactoring process and help ensure you don’t introduce bugs in your code. Airbnb, for example, uses the RuboCop tool for their Ruby codebase to enforce style conventions and find common errors before they become problems.
-("Code Refactoring: 6 Best Practices,"https://www.rapidops.com/blog/code-refactoring-best-practices/)
+("Code Refactoring: 6 Best Practices to Follow for Developers,"https://www.rapidops.com/blog/code-refactoring-best-practices/)
 
 
 
