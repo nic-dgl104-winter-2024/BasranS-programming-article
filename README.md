@@ -31,9 +31,8 @@ Some common reasons code becomes messy and requires refactoring include:
 * Better performance
 * Lower risk of bugs
 * Higher developer productivity
-## Refactoring Best Practices 
-These proven strategies help ensure refactoring success and mitigate any potential risks involved in the process.
 
+## Refactoring Best Practices 
 1. Refactor first before adding any new features
 This practice ensures the codebase is in the best possible state to accommodate new additions. Instagram’s development team followed this approach before introducing their IGTV feature, helping to prevent feature creep and maintain a clean, manageable codebase.
 
@@ -43,13 +42,10 @@ This involves deciding what to refactor, when, and how to mitigate associated ri
 3. Testing often throughout the refactoring process
 Testing is a crucial part of refactoring. Netflix has automated tests that run continuously throughout their refactoring process, enabling them to catch and address any regressions or issues immediately.
 
-4. Involving your QA team in the process
-The QA team plays a vital role in ensuring the refactored code meets the quality standards. Companies like Shopify involve their QA teams early to ensure thorough testing and high-quality code.
-
-5. Focusing on progress, not perfection
+4. Focusing on progress, not perfection
 Remember, refactoring is about improving the codebase incrementally, not perfecting it. Microsoft follows this principle, regularly making minor improvements to its vast codebase.
 
-6. Trying refactoring automation
+5. Trying refactoring automation
 There are tools available that can automate parts of the refactoring process. Google, for instance, developed an internal tool called Rosie, which has automated millions of refactorings, improving developer productivity and code quality.
 ("Code Refactoring: 6 Best Practices to Follow for Developers,"https://www.rapidops.com/blog/code-refactoring-best-practices/)
 ## Code refactoring techniques
@@ -60,12 +56,10 @@ Red-Green-Refactor method, developers break  refactoring down into three distinc
 * Stop and consider what needs to be developed. [RED]
 * Get the development to pass basic testing. [GREEN]
 * Implement improvements. [REFACTOR]
-code refactoring - red green refactor
 
 ![red1](https://github.com/nic-dgl104-winter-2024/BasranS-programming-article/assets/144393592/2a99f494-7576-4e79-b6c0-072e46c8771b)
 ### Refactoring by Abstraction
-Branching by abstraction is a method used primarily when there is a large amount of refactoring to be done. Abstraction involves class inheritances, hierarchy, and extraction. The goal of abstraction is to reduce unnecessary duplications in software code. One example of abstraction is the Pull-Up/Push-Down method. These are two opposite forms of refactoring involving classes. The Pull-Up method pulls code 
-parts into a superclass in order to eliminate code duplication. Push-Down takes it from a superclass and moves it down into subclasses.
+Branching by abstraction is a method used primarily when there is a large amount of refactoring to be done. Abstraction involves class inheritances, hierarchy, and extraction. The goal of abstraction is to reduce unnecessary duplications in software code. One example of abstraction is the Pull-Up/Push-Down method. These are two opposite forms of refactoring involving classes.
 
 ![abs1](https://github.com/nic-dgl104-winter-2024/BasranS-programming-article/assets/144393592/440fd978-8910-4236-8c71-2fbc45e1dc05)
 ## Composing Method
@@ -75,8 +69,8 @@ Composing involves streamlining the code in order to reduce duplications. This i
 ## Simplifying Methods
 The older code gets, the more garbled and complicated it tends to be. Consequently, it makes sense to go in and simplify a lot of the logic. This can be done in a variety of ways, including consolidation of conditional fragments and expressions and replacing conditional with polymorphism. Simplifying method calls involves tweaking the interaction between classes. Adding, removing, and introducing new parameters along with replacing parameters with explicit methods and method calls are all aspects of simplification. ("Code Refactoring Best Practices: When (and When Not) to Do It,"https://www.altexsoft.com/blog/code-refactoring-best-practices-when-and-when-not-to-do-it/)
 
-## Code Snippets(Java)
-### Red and Green Method (Before Refactoring)
+## Code Snippets (Java)
+### Red and Green Method (Before)
 
 public class OrderProcessor {
     
@@ -90,6 +84,7 @@ public class OrderProcessor {
 }
 
 ### After Refactoring 
+According to the single responsibility principle we can refactor this class such that we have and OrderProcessor class responsible for processing and order and OrderLogger class responsible for logging.
 
 public class OrderProcessor {
 
@@ -110,7 +105,7 @@ public class OrderLogger {
     }
 }
 
-### Extraction Mtehod (Before Extraction)
+### Extraction Mtehod (Before)
 
 public class OrderProcessor {
    
@@ -130,8 +125,8 @@ public class OrderProcessor {
     }
 }
 
-### After Extraction
-
+### After Refactoring
+You can refactor the code above such that the code related to calculating the subtotal, tax, and total cost has been extracted into separate methods: calculateTax, calculateSubtotal, and calculateTotalCost as shown below. This makes the class more readable, modular, and reusable.
 public class OrderProcessor {
    
     private List<Item> items;
@@ -160,7 +155,7 @@ public class OrderProcessor {
     }
 }
 
-###Simplifying Method (Before Simplification)
+### Simplifying Method (Before)
 
 public class ShoppingCart {
     
@@ -182,7 +177,8 @@ public class ShoppingCart {
     }
 }
 
-### After Simplification
+### After Refactoring
+We can simplify the example above by extracting the calculateItemPrice logic to calculateItemPrice and applyDiscount and simplify the conditionals by using ternary operators instead.
 
 public class ShoppingCart {
     
@@ -208,6 +204,8 @@ public class ShoppingCart {
 
 (https://medium.com/javarevisited/code-refactoring-in-java-tips-best-practices-techniques-c240fb334925)
 
+## Conclusion
+Refactoring is essential for making computer code neat and efficient. It suggests cleaning up the code when you notice it's getting messy or when you're adding new things to it. This helps in making the code easier to understand, less prone to mistakes, and keeps developers happy. The article shares practical tips and techniques, using Java examples to show how it's done. It's all about maintaining a clean and organized workspace for developers to make their job smoother.
 
 ### Bibliography
 
