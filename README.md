@@ -207,5 +207,11 @@ public class ShoppingCart {
 ## Conclusion
 Refactoring is essential for making computer code neat and efficient. It suggests cleaning up the code when you notice it's getting messy or when you're adding new things to it. This helps in making the code easier to understand, less prone to mistakes, and keeps developers happy. The article shares practical tips and techniques, using Java examples to show how it's done. It's all about maintaining a clean and organized workspace for developers to make their job smoother.
 
-### Bibliography
+## Bibliography
+* How I document my article: Refactoring.com: Martin Fowler's "Refactoring" - https://refactoring.com/
+* AltexSoft Blog: "Code Refactoring Best Practices: When (and When Not) to Do It"- https://www.altexsoft.com/blog/code-refactoring-best-practices-when-and-when-not-to-do-it/
+* Refactoring Guru: "Refactoring" - https://refactoring.guru/refactoring/when/
+* RapidOps Blog: "Code Refactoring: 6 Best Practices to Follow for Developers" - https://www.rapidops.com/blog/code-refactoring-best-practices/)
+* Code snippets: Medium Article: "Code Refactoring in Java: Tips, Best Practices, Techniques"- https://medium.com/javarevisited/code-refactoring-in-java-tips-best-practices-techniques-c240fb334925)
+* OpenAI's ChatGPT - https://openai.com/chatgpt
 
