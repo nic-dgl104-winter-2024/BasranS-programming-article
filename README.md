@@ -71,12 +71,13 @@ Red-Green-Refactor method, developers break  refactoring down into three distinc
 * Implement improvements. [REFACTOR]
 code refactoring - red green refactor
 
-![red](https://github.com/nic-dgl104-winter-2024/BasranS-programming-article/assets/144393592/317a255f-992e-40ba-ab57-1b23b4460983)
+![red1](https://github.com/nic-dgl104-winter-2024/BasranS-programming-article/assets/144393592/2a99f494-7576-4e79-b6c0-072e46c8771b)
 
 ### Refactoring by Abstraction
-Branching by abstraction is a method used primarily when there is a large amount of refactoring to be done. Abstraction involves class inheritances, hierarchy, and extraction. The goal of abstraction is to reduce unnecessary duplications in software code. One example of abstraction is the Pull-Up/Push-Down method. These are two opposite forms of refactoring involving classes. The Pull-Up method pulls code parts into a superclass in order to eliminate code duplication. Push-Down takes it from a superclass and moves it down into subclasses.
+Branching by abstraction is a method used primarily when there is a large amount of refactoring to be done. Abstraction involves class inheritances, hierarchy, and extraction. The goal of abstraction is to reduce unnecessary duplications in software code. One example of abstraction is the Pull-Up/Push-Down method. These are two opposite forms of refactoring involving classes. The Pull-Up method pulls code 
+parts into a superclass in order to eliminate code duplication. Push-Down takes it from a superclass and moves it down into subclasses.
 
-![abs](https://github.com/nic-dgl104-winter-2024/BasranS-programming-article/assets/144393592/8c162520-7a46-47b9-bd1c-e699b8e28735)
+![abs1](https://github.com/nic-dgl104-winter-2024/BasranS-programming-article/assets/144393592/440fd978-8910-4236-8c71-2fbc45e1dc05)
 
 ### Composing Method
 Composing involves streamlining the code in order to reduce duplications. This is done through various processes, including extraction and inline methods.
